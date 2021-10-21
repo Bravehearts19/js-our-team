@@ -42,12 +42,12 @@ cardArray.push(firstCard, secondCard, thirdCard, fourthCard, fifthCard, sixthCar
 console.log(cardArray);
 
 generateCards();
-/* generateSingleCard(firstCard.name, firstCard.role, firstCard.image); */
+document.getElementById("image").value = "";
 
 addMemberButton.addEventListener("click", function() {
     let inputName = document.getElementById("name").value;
     let inputRole = document.getElementById("role").value;
-    let inputImage = "img/" + document.getElementById("image").value;
+    let inputImage = document.getElementById("image").value;
 
     console.log(inputName);
     console.log(inputRole);
@@ -59,7 +59,6 @@ addMemberButton.addEventListener("click", function() {
     document.getElementById("role").value = "";
     document.getElementById("image").value = "";
 })
-
 
 function generateCards() {
     for (let i = 0; i < cardArray.length; i++) {
