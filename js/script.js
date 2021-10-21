@@ -1,5 +1,5 @@
 const cardArray = [];
-const teamContainer = document.getElementById("team-container");
+const teamContainer = document.querySelector(".team-container");
 const addMemberButton = document.getElementById("addMemberButton");
 
 const firstCard = {
@@ -55,9 +55,9 @@ addMemberButton.addEventListener("click", function() {
 
     generateSingleCard(inputName, inputRole, inputImage);
 
-    inputName = "";
-    inputRole = "";
-    inputImage = "";
+    document.getElementById("name").value = "";
+    document.getElementById("role").value = "";
+    document.getElementById("image").value = "";
 })
 
 
